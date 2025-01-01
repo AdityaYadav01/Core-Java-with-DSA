@@ -22,5 +22,20 @@ public class TypeConversion {
         int num = (int) (64.57f);    // Here, We have performed type casting
         System.out.println(num);
 
+        /* Type Promotion
+
+        While evaluating expressions the intermediate value may exceed the range of the operands
+        hence the expression value will be promoted.
+
+        a. Java automatically promotes each bytes, short, or char operands to int while evaluating an expression
+        b. If one operand is a long, float, or double the whole expression is promoted to long, float, or double.
+        * */
+
+        byte a = 4;
+        byte b = 15;
+
+        int sum = a+b; //Automatic Type Promotion happens here. byte value is converted to int value
+        System.out.println(sum);
+
     }
 }
